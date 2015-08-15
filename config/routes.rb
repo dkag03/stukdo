@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  root 'pages#home' #this makes typing "localhost:3000" route us to the pages/home (pages controller/home action)
 
-  get 'about' => "pages#about"
+  get 'about' => "pages#about" #added a route to our about page using the pages controller (pages controller/about action)
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
